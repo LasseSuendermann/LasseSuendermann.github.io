@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML &amp; test</title>
+  <style type="text/css">
+   body {
+      background-color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    
+
+    @keyframes open {
+      from {
+        left: -100vw;
+      }
+      to {
+        left: 0;
+      }
+    }
+
+    #burgerbutton {
+      display: none;
+    }
+
+
+    .burgerimage {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      font-size: 28pt;
+      cursor: pointer;
+      transition: transform 0.8s ease;
+      color: black;
+    }
+
+    
+
+    nav ul {
+      display: none;
+      position: fixed;
+      top: 53px;
+      margin: 0;
+      padding: 0;
+      width: 50vw;
+      list-style: none;
+    }
+
+    nav ul li {
+      display: block;
+      width: auto;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+  
+      display: block;
+      padding: 20px;
+      transition: background 0.5s ease;
+    }
+
+  
+    #burgerbutton:checked ~ ul {
+      display: block;
+      animation-name: open;
+      animation-duration: 0.8s;
+    }
+
+    #burgerbutton:checked ~ .burgerimage {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+
+<body>
+   <body style="background-image:url(Hintergrund.jpg); background-size: cover">
+  <nav>
+    <input type="checkbox" id="burgerbutton" />
+    <label for="burgerbutton" class="burgerimage" title="Navigation">&#x2630;</label>
+    <ul>
+      <li><a href="AboutMe.htm" title="AboutMe"><b>About Me</b></a></li>
+      <li><a href="contact.htm" title="contact"><b>Contact</b></a></li>
+
+    </ul>
+  </nav>
+</body>
+
+</html>
