@@ -1,0 +1,132 @@
+body{
+background-image:url("bg.png");
+background-repeat:repeat;
+display: grid;
+place-items: center;
+height: 100vh;
+}
+
+nav {
+    position: fixed;
+    box-sizing: border-box;
+    border-radius: 0px 0px 15px 15px;
+    line-height: 30px;
+    top: 0px;
+    right: 20px;
+    background: black;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+a{
+    font-size: 40px;
+    color: #a8a8a8;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.active {
+    color: red;
+  }
+
+
+a:hover{
+    color: coral;
+}
+
+.icons:hover{
+  zoom: 150%;
+}
+
+div{
+    width: 1000px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+font{
+    font-family: sans-serif;
+    
+    
+}
+
+
+
+
+h1 {
+   text-align: center;
+   color:black;
+   font-family: sans-serif;
+}
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+  
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     @include border-radius(8px);
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: sans-serif;
+     @include box-shadow(0 1px 1px rgba(black, 0.1));
+     resize: none;
+    
+    &:focus {
+       @include box-shadow(0 0px 2px rgba($red, 1)!important);
+    }
+  }
+  
+  #input-submit {
+     color: white; 
+     background: $red;
+     cursor: pointer;
+    
+    &:hover {
+       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 
+    }
+  }
+  
+  textarea {
+      height: 126px;
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
