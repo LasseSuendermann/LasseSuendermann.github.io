@@ -1,0 +1,47 @@
+body{
+    background-image:url("Station_3_Hover/images/bg.png");
+    background-repeat:repeat;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    }
+
+    div{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    iframe{
+        position: absolute;
+    }
+
+.stern{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.stern2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+
+    .stern2:hover{
+       opacity: 1;
+        
+    }
+
+    h1{
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        font-family: cursive;
+        color: bisque;
+    }
+
+    

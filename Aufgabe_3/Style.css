@@ -1,0 +1,44 @@
+body{
+    background-image:url("Station_1_Positionierung/images/bg.png");
+    background-repeat:repeat;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    }
+
+    div{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    img.pinguin{
+        position: absolute;
+        top: 110%;
+        left: 110%;
+        transform: translate(-110%, -110%);
+    }
+
+    img.zweig{
+        position: absolute;
+        top: -20%;
+        left: -20%;
+        transform: translate(20%, 20%);
+    }
+    h1{
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        font-family: cursive;
+        color: bisque;
+    }
+
+    p{
+        position: absolute;
+        top: 120px;
+        left: 60px;
+        font-family: cursive;
+        width: 500px;
+        color: bisque;
+    }
