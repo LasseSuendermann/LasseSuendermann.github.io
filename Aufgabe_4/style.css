@@ -1,0 +1,95 @@
+body{
+    background-image:url("images/bg.jpg");
+    background-size: cover;
+}
+
+@media only screen and (max-width:600px){
+
+}
+
+.question{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.answer1{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: azure;
+}
+
+.answer2{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    color: azure;
+}
+
+.answer3{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    color: azure;
+}
+
+.answer4{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    color: azure;
+}
+
+.answer1h{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    opacity: 0;
+}
+
+.answer1h:hover{
+    opacity: 1;
+}
+
+.answer2h{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    opacity: 0;
+}
+
+.answerh2:hover{
+    opacity: 1;
+}
+
+.answer3h{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    opacity: 0;
+}
+
+.answer3h:hover{
+    opacity: 1;
+}
+
+.answer4h{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    opacity: 0;
+}
+
+.answer4h:hover{
+    opacity: 1;
+}
