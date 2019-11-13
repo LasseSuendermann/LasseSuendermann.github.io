@@ -1,6 +1,6 @@
 body{
     background-image:url("images/bg.jpg");
-    background-size: cover;
+    background-size: 100%;
 }
 
 @media only screen and (max-width:600px){
@@ -13,6 +13,14 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
+
+.question2{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: azure;
+    }
 
 .answer1{
     position: absolute;
@@ -92,4 +100,36 @@ transform: translate(-50%, -50%);
 
 .answer4h:hover{
     opacity: 1;
+}
+
+.text1{
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: azure;
+}
+
+.text2{
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    color: azure;
+}
+
+.text3{
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    color: azure;
+}
+
+.text4{
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    color: azure;
 }
