@@ -149,3 +149,10 @@ h1{
     transform: translate(-50%, -50%);
     color: azure;
 }
+
+.icons{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
