@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="ts/vector.js"></script>
+    <script src="ts/player.js"></script>
+    <script src="ts/ball.js"></script>
+    <script src="ts/main.js"></script>
+    <title>Football Simulator</title>
+</head>
+<body>
+<div class="points"><p>0 : 0</p>click player to delete</div>
+<div class="player-info">
+    <h1>Player Stats:</h1>
+    <p class="number">Number</p>
+    <p class="power">Shooting power</p>
+    <p class="run">Velocity</p>
+    <p class="precision">Precision</p>
+</div>
+<div class="settings">
+    <div class="in-wrap">
+        <label>
+            shooting power min:
+            <input type="number" min="0" max="3" step="0.1" id="shootMin" value="0.5">
+        </label>
+        <label>
+            shooting power max:
+            <input type="number" min="0" max="3" step="0.1" id="shootMax" value="2">
+        </label>
+    </div>
+    <div class="in-wrap">
+        <label>
+            velocity min:
+            <input type="number" min="0" max="3" step="0.1" id="veloMin" value="2">
+        </label>
+        <label>
+            velocity max:
+            <input type="number" min="0" max="3" step="0.1" id="veloMax" value="4">
+        </label>
+    </div>
+    <div class="in-wrap">
+        <label>
+            precision min:
+            <input type="number" min="0" max="3" step="0.1" id="precMin" value="1">
+        </label>
+        <label>
+            precision max:
+            <input type="number" min="0" max="3" step="0.1" id="precMax" value="4">
+        </label>
+    </div>
+</div>
+<div class="popup">
+    <p class="message"></p>
+    <div class="ok" data-actio="">OK</div>
+</div>
+<canvas width="840px" height="548px"></canvas>
+</body>
+</html>
