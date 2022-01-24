@@ -1,0 +1,369 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    padding-bottom: 45px;
+}
+
+h1 {
+    font-size: 32px;
+    font-style: italic;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 24px;
+    margin: 0;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+}
+
+header .top-h {
+    display: flex;
+    height: 97%;
+}
+
+header .left {
+    display: flex;
+    flex-direction: column;
+    width: 57.5%;
+    margin-left: 2.5%;
+    height: 100%;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+header .left img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+header .left .logo-wrap {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+header .right {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header .input-wrap {
+    display: flex;
+    width: 60%;
+    padding: 0 2.5%;
+    border-radius: 10px;
+    border: 1px solid rgb(153, 13, 13);
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .input-wrap input {
+    border: none;
+    height: 35px;
+    width: 90%;
+}
+
+header .input-wrap input:focus {
+    outline: none;
+}
+
+header .input-wrap img {
+    width: 20px;
+    cursor: pointer;
+}
+
+header .bottom {
+    display: flex;
+    height: 3%;
+    width: 100%;
+}
+
+.bottom .color-sec {
+    height: 100%;
+    width: 14.8%;
+}
+
+
+
+.top .mid {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 56%;
+    margin-top: 4%;
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+.top .mid img {
+    margin: 0 20px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.down h4 {
+    width: 50%;
+}
+
+.down .bot-sec {
+    display: flex;
+    width: 50%;
+    font-weight: lighter;
+    align-items: center;
+}
+
+.down .play-like {
+    display: flex;
+    width: 80px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.down .play-like img {
+    margin-right: 10px;
+}
+
+.down .follow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(153, 13, 13);
+    color: white;
+    font-weight: lighter;
+    margin-left: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.mid-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+    height: 1px;
+    width: 50%;
+}
+
+.mid-sec .bottom {
+    display: flex;
+    height: 2.5%;
+    width: 100%;
+}
+
+.mid-sec .step-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(153, 13, 13);
+    margin-bottom: 35px;
+}
+
+.mid-sec .inner-step-bar {
+    position: absolute;
+    left: 0;
+    display: flex;
+    width: 16.66%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #cf0505;
+    transition: width 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.mid-sec .point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    border: 2px solid rgb(158, 13, 13);
+    background-color: white;
+
+    z-index: 1;
+    transition: all 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.quiz-sec {
+    display: flex;
+    padding: 50px 5%;
+    background-color: #F5F5F5;
+}
+
+.quiz-sec h3 {
+    margin-bottom: 10px;
+}
+
+.quiz-sec .quiz {
+    display: none;
+    width: 87.5%;
+    padding-right: 2.5%;
+}
+
+.quiz-sec .quiz:nth-child(1) {
+    display: flex;
+}
+
+.quiz-sec .left, .quiz-sec .right {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 2.5%;
+}
+
+.question-sec {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.answer-sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-sec .answer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(153, 13, 13);
+    color: white;
+    font-weight: lighter;
+    margin-left: auto;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+label {
+    color: rgb(153, 13, 13);
+}
+
+.popup {
+    position: absolute;
+    top: 15%;
+    left: 27.5%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 55%;
+    padding: 2.5%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgb(153, 13, 13);
+    color: white;
+    z-index: 2;
+}
+
+.popup h3 {
+    display: none;
+    margin: 0 20%;
+    margin-top: 20px;
+}
+
+.popup .ok {
+    width: 20%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    color: grey;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+.link-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.link-sec p {
+    margin: 10px 0;
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgb(153, 13, 13);
+    color: white;
+    font-weight: lighter;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link-sec .bottom {
+    margin-top: 30px;
+    height: 5px;
+    width: 100%;
+    display: flex;
+}
