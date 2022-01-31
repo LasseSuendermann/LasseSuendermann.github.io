@@ -1,9 +1,11 @@
 var vidSrc = [
-    {src: "https://www.youtube.com/embed/uCRT8IItGpw", done: true, title: "Intro"},
-    {src: "https://www.youtube.com/embed/YTC75cKzuNk", done: false, title: "Kapitel 2"},
-    {src: "https://www.youtube.com/embed/uCRT8IItGpw", done: false, title: "Kapitel 3"},
-    {src: "https://www.youtube.com/embed/YTC75cKzuNk", done: false, title: "Kapitel 4"},
-    {src: "https://www.youtube.com/embed/uCRT8IItGpw", done: false, title: "Kapitel 5"}
+    {src: "https://drive.google.com/file/d/1DLaF5zCdmREl0pPab5KuJy4EbAc2UBBO/preview", done: true, title: "Intro"},
+    {src: "https://drive.google.com/file/d/1DLaF5zCdmREl0pPab5KuJy4EbAc2UBBO/preview", done: false, title: "Kapitel 2"},
+    {src: "https://drive.google.com/file/d/1DLaF5zCdmREl0pPab5KuJy4EbAc2UBBO/preview", done: false, title: "Kapitel 3"},
+    {src: "https://drive.google.com/file/d/1DLaF5zCdmREl0pPab5KuJy4EbAc2UBBO/preview", done: false, title: "Kapitel 4"},
+    {src: "https://drive.google.com/file/d/1DLaF5zCdmREl0pPab5KuJy4EbAc2UBBO/preview", done: false, title: "Kapitel 5"},
+    {src: "https://drive.google.com/file/d/1DLaF5zCdmREl0pPab5KuJy4EbAc2UBBO/preview", done: false, title: "Kapitel 6"},
+    {src: "https://drive.google.com/file/d/1DLaF5zCdmREl0pPab5KuJy4EbAc2UBBO/preview", done: false, title: "Kapitel 7"}
 ]
 var actualVid = 0;
 
@@ -13,10 +15,16 @@ var questions = [
         [true, false, false, false]
     ],
     [
-        [true, false, false, false]
+        [false, true, false, false]
     ],
     [
         [true, false, true, false, true]
+    ],
+    [
+        [false, true, false, false]
+    ],
+    [
+        [false, true, false, false]
     ],
     [
         [false, true, false, false]
@@ -36,19 +44,19 @@ window.addEventListener("load", () => {
     $('.go-left').on("click", () => {
         let srcToCheck = actualVid - 1
         if (srcToCheck < 0) {
-            srcToCheck = 4
+            srcToCheck = 6
         }
         if (vidSrc[srcToCheck].done === true) {
             $('.quiz.' + actualVid).hide()
             actualVid--
-            stepBarWidth -= 10
+            stepBarWidth -= 14.4
             if (firstDone) {
-                stepBarWidth -= 10
+                stepBarWidth -= 14.4
                 firstDone = false
             }
             if (actualVid < 0) {
-                actualVid = 4
-                stepBarWidth = 99.96 
+                actualVid = 6
+                stepBarWidth = 101
             }
             $('.quiz.' + actualVid).css("display", "flex")
             let stepBar = $('.inner-step-bar')
@@ -79,16 +87,16 @@ window.addEventListener("load", () => {
             }
         counter++
         }
-        if (done && actualVid !== 4) {
+        if (done && actualVid !== 6) {
             vidSrc[actualVid].done = true;
             let nth = actualVid+1
-            $('.point:nth-child('+nth+')').css("background-color", "rgb(153, 13, 13)")
+            $('.point:nth-child('+nth+')').css("background-color", "#89adc2")
             $('.point:nth-child('+nth+')').css("color", "white")
             nextVid()
             $('.popup').css('display', 'flex')
             $('.popup .correct').show()
             $('.mid')[0].scrollIntoView({block: "end", behavior: "smooth"})
-        } else if (actualVid !== 4) {
+        } else if (actualVid !== 6) {
             $('.popup').css('display', 'flex')
             $('.popup .false').show()
             $('.mid')[0].scrollIntoView({block: "end", behavior: "smooth"})
@@ -99,9 +107,9 @@ window.addEventListener("load", () => {
             stepBarWidth += 10
             let stepBar = $('.inner-step-bar')
             stepBar.width(stepBarWidth + "%")
-            $('.point:nth-child(5)').css('background-color', 'rgb(153, 13, 13)')
+            $('.point:nth-child(5)').css('background-color', '#89adc2')
             $('.point:nth-child(5)').css('color', 'white')
-            vidSrc[4].done = true;
+            vidSrc[6].done = true;
             firstDone = true;
         }
     })
@@ -143,18 +151,18 @@ function nextVid () {
     if (vidSrc[actualVid].done === true) {
         $('.quiz.' + actualVid).hide()
         if (actualVid === 0) {
-            $('.point:nth-child(1)').css('background-color', 'rgb(153, 13, 13)')
+            $('.point:nth-child(1)').css('background-color', '#89adc2')
             $('.point:nth-child(1)').css('color', 'white')
         }
         actualVid++
-        stepBarWidth += 10
+        stepBarWidth += 14.4
         if (firstDone) {
-            stepBarWidth -= 10
+            stepBarWidth -= 14.4
             firstDone = false
         }
-        if (actualVid > 4) {
+        if (actualVid > 6) {
             actualVid = 0
-            stepBarWidth = 10
+            stepBarWidth = 14.4
         }
         let stepBar = $('.inner-step-bar')
         stepBar.width(stepBarWidth + "%")

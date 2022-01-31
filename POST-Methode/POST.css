@@ -10,7 +10,7 @@ body {
 
 h1 {
     font-size: 32px;
-    font-style: italic;
+    font-style: normal;
     margin: 0;
 }
 
@@ -21,7 +21,7 @@ h2 {
 }
 
 h3 {
-    font-style: italic;
+    font-style: normal;
     font-size: 24px;
     margin: 0;
 }
@@ -84,7 +84,7 @@ header .input-wrap {
     width: 60%;
     padding: 0 2.5%;
     border-radius: 10px;
-    border: 1px solid rgb(153, 13, 13);
+    border: 1px solid #89adc2;
     align-items: center;
     justify-content: space-between;
 }
@@ -174,7 +174,7 @@ header .bottom {
     width: 100px;
     height: 30px;
     border-radius: 5px;
-    background-color: rgb(153, 13, 13);
+    background-color: #89adc2;
     color: white;
     font-weight: lighter;
     margin-left: auto;
@@ -185,10 +185,10 @@ header .bottom {
 .mid-sec {
     display: flex;
     flex-direction: column;
-    align-items: right;
-    justify-content: right;
+    align-items: flex-end;
+    justify-content: flex-start;
     height: 1px;
-    width: 50%;
+    width: 50%
 }
 
 .mid-sec .bottom {
@@ -205,7 +205,7 @@ header .bottom {
     width: 30%;
     height: 5px;
     border-radius: 5px;
-    border: 2px solid rgb(153, 13, 13);
+    border: 2px solid rgb(0, 0, 0);
     margin-bottom: 35px;
 }
 
@@ -213,10 +213,10 @@ header .bottom {
     position: absolute;
     left: 0;
     display: flex;
-    width: 16.66%;
+    width: 14.4%;
     height: 100%;
     border-radius: 5px;
-    background-color: #cf0505;
+    background-color: #89adc2;
     transition: width 0.3s;
     transition-timing-function: ease-in;
 }
@@ -228,7 +228,7 @@ header .bottom {
     width: 15px;
     height: 15px;
     border-radius: 10px;
-    border: 2px solid rgb(158, 13, 13);
+    border: 2px solid rgb(0, 0, 0);
     background-color: white;
 
     z-index: 1;
@@ -281,7 +281,7 @@ header .bottom {
     width: 100px;
     height: 30px;
     border-radius: 5px;
-    background-color: rgb(153, 13, 13);
+    background-color: #7b9cb3;
     color: white;
     font-weight: lighter;
     margin-left: auto;
@@ -290,7 +290,7 @@ header .bottom {
 }
 
 label {
-    color: rgb(153, 13, 13);
+    color: rgb(0, 0, 0);
 }
 
 .popup {
@@ -307,7 +307,7 @@ label {
     border-radius: 20px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    background-color: rgb(153, 13, 13);
+    background-color: #89adc2;
     color: white;
     z-index: 2;
 }
@@ -354,7 +354,7 @@ label {
     height: 30px;
     margin-top: 10px;
     border-radius: 5px;
-    background-color: rgb(153, 13, 13);
+    background-color: #89adc2;
     color: white;
     font-weight: lighter;
     cursor: pointer;
@@ -366,4 +366,16 @@ label {
     height: 5px;
     width: 100%;
     display: flex;
+}
+
+.test {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.png {
+    width: 5%;
+    transform: translateX(350%);
 }
