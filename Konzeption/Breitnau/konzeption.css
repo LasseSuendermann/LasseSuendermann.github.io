@@ -7,7 +7,7 @@ body {
 
 .bg {
     background-image: url("karte.png");
-    max-width: 60%;
+    max-width: 1200px;
     width: 100%;
     margin: auto;
     position: relative;
@@ -28,9 +28,9 @@ body {
 
 .dot {
     width: 20px;
-    height: 15px;
+    height: 20px;
     border-radius: 10px;
-    background-color: red;
+    background-color: goldenrod;
     z-index: 1;
     position: absolute;
     transition: all 0.3s;
@@ -63,9 +63,10 @@ body {
 
 .dot:hover {
     width: 30px;
-    height: 25px;
+    height: 30px;
     border-radius: 15px;
-    transform: translate(-5px, -5px);
+    padding: 5px;
+    transform: translate(-10px, -10px);
     transition: all 0.3s;
 }
 
@@ -116,15 +117,4 @@ body {
     transition: all 0.3s;
 }
 
-.info {
-    width:100px;
-    height: 100px;
 
-}
-
-.Leiste {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-}

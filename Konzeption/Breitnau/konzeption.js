@@ -6,7 +6,6 @@ const videos = [
     'https://www.youtube.com/embed/ITdHFhkGihs',
 ]
 
-
 $(document).ready(() => {
     $('.dot').click((e) => {
         let id = parseInt(e.target.id.replace('d', ''))
