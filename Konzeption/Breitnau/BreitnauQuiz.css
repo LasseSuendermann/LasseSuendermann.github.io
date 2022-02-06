@@ -1,0 +1,113 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    padding-bottom: 45px;
+}
+
+
+
+
+.quiz-sec .answer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #7b9cb3;
+    color: white;
+    font-weight: lighter;
+    margin-left: auto;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+label {
+    color: rgb(0, 0, 0);
+}
+
+.popup {
+    position: absolute;
+    top: 15%;
+    left: 27.5%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 55%;
+    padding: 2.5%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: #89adc2;
+    color: white;
+    z-index: 2;
+}
+
+.popup h3 {
+    display: none;
+    margin: 0 20%;
+    margin-top: 20px;
+}
+
+.popup .ok {
+    width: 20%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+.link-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.link-sec p {
+    margin: 10px 0;
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #89adc2;
+    color: white;
+    font-weight: lighter;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link-sec .bottom {
+    margin-top: 30px;
+    height: 5px;
+    width: 100%;
+    display: flex;
+}
+
+.test {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
